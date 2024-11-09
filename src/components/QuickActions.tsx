@@ -8,13 +8,13 @@ interface QuickActionsProps {
 
 const QuickActions = ({ onAction, disabled }: QuickActionsProps) => {
   return (
-    <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-2">
       <Button
         variant="outline"
         size="sm"
         onClick={() => onAction("lookup")}
         disabled={disabled}
-        className="bg-sally-slate/20 border-sally-slate/30 hover:bg-sally-slate/30"
+        className="bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-200"
       >
         <Search className="w-4 h-4 mr-2" />
         Case Lookup
@@ -24,7 +24,7 @@ const QuickActions = ({ onAction, disabled }: QuickActionsProps) => {
         size="sm"
         onClick={() => onAction("analyze")}
         disabled={disabled}
-        className="bg-sally-slate/20 border-sally-slate/30 hover:bg-sally-slate/30"
+        className="bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-200"
       >
         <FileText className="w-4 h-4 mr-2" />
         Document Analysis
@@ -34,7 +34,7 @@ const QuickActions = ({ onAction, disabled }: QuickActionsProps) => {
         size="sm"
         onClick={() => onAction("summary")}
         disabled={disabled}
-        className="bg-sally-slate/20 border-sally-slate/30 hover:bg-sally-slate/30"
+        className="bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-200"
       >
         <List className="w-4 h-4 mr-2" />
         Case Summary
@@ -44,7 +44,7 @@ const QuickActions = ({ onAction, disabled }: QuickActionsProps) => {
         size="sm"
         onClick={() => onAction("more")}
         disabled={disabled}
-        className="bg-sally-slate/20 border-sally-slate/30 hover:bg-sally-slate/30"
+        className="bg-gray-800 border-gray-700 hover:bg-gray-700 text-gray-200"
       >
         <MoreHorizontal className="w-4 h-4 mr-2" />
         More Options

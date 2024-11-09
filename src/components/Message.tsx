@@ -11,11 +11,11 @@ const Message = ({ content, isAi }: MessageProps) => {
       className={cn(
         "p-4 rounded-lg max-w-[80%] animate-slide-up",
         isAi
-          ? "bg-sally-slate/20 mr-auto border border-sally-slate/20"
-          : "bg-sally-azure/20 ml-auto border border-sally-azure/20"
+          ? "bg-gray-800/50 mr-auto border border-gray-700"
+          : "bg-gray-700/50 ml-auto border border-gray-600"
       )}
     >
-      <p className="text-sm leading-relaxed">{content}</p>
+      <p className="text-sm leading-relaxed text-gray-200">{content}</p>
     </div>
   );
 };
