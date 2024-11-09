@@ -26,9 +26,13 @@ const ChatInput = ({ onSend, disabled }: ChatInputProps) => {
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Type your message..."
         disabled={disabled}
-        className="flex-grow bg-sally-slate/20"
+        className="flex-grow bg-sally-slate/20 border-sally-slate/30 focus-visible:ring-sally-azure/50"
       />
-      <Button type="submit" disabled={disabled || !message.trim()}>
+      <Button 
+        type="submit" 
+        disabled={disabled || !message.trim()}
+        className="bg-sally-azure hover:bg-sally-azure/90"
+      >
         <Send className="w-4 h-4" />
       </Button>
     </form>
